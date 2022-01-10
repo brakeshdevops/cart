@@ -1,6 +1,6 @@
 @Library('roboshop') _
-nodejs.info 'Starting'
-nodejs.warning 'This is a warning message'
+
+
 pipeline
 {
     agent
@@ -17,21 +17,21 @@ pipeline
         {
             steps
             {
-                sh 'echo compile code'
+                nodejs.info 'compile the code'
             }
         }
         stage('Check the code quality')
         {
             steps
             {
-                sh 'echo check the code quality'
+                nodejs.info 'Check the code quality'
             }
         }
         stage('Test Cases')
         {
             steps
             {
-                sh 'echo Test cases'
+                nodejs.info 'Testcases'
             }
         }
     }
