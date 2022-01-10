@@ -1,4 +1,6 @@
 @Library('roboshop') _
+nodejs.info 'Starting'
+nodejs.warning 'This is a warning message'
 pipeline
 {
     agent
