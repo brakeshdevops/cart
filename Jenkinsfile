@@ -17,21 +17,30 @@ pipeline
         {
             steps
             {
-                nodejs.info 'compile the code'
+                script
+                {
+                        nodejs.info 'compile the code'
+                }
             }
         }
         stage('Check the code quality')
         {
             steps
             {
-                nodejs.info 'Check the code quality'
+                script
+                {
+                    nodejs.info 'Check the code quality'
+                }
             }
         }
         stage('Test Cases')
         {
             steps
             {
-                nodejs.info 'Testcases'
+                script
+                {
+                    nodejs.info 'Testcases'
+                }
             }
         }
     }
